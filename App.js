@@ -1,14 +1,26 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import {
+  StyleSheet,
+  Text,
+  View
+} from 'react-native';
+
+import FixedDimension from './components/FixedDimension';
+import FlexDimension from './components/FlexDimension';
+import FlexBoxRowDimension from './components/FlexBoxRowDimension';
+import FlexBoxColumnDimension from './components/FlexBoxColumnDimension';
+import AlignedFlexBoxColumnDimension from './components/AlignedFlexBoxColumnDimension';
 
 export default class App extends React.Component {
   render() {
-    return (
-      <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
-        <Text>Changes you make will automatically reload.</Text>
-        <Text>Shake your phone to open the developer menu.</Text>
-      </View>
+    return ( 
+    <View style={{flex: 1}}>
+      {/* < FixedDimension /> */}
+      {/* < FlexDimension /> */}
+      {/* <FlexBoxRowDimension /> */}
+      {/* <FlexBoxColumnDimension /> */}
+      <AlignedFlexBoxColumnDimension />
+    </View>
     );
   }
 }
